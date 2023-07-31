@@ -1,8 +1,8 @@
-$body: (
-  'dark-scheme': #000,
-  'light-scheme': #fff,
+$border: (
+  'dark-scheme': #fff,
+  'light-scheme': #000,
 );
 
-@function body($key) {
-  @return map-get($body, $key);
+@function border($key) {
+  @return map-get($border, $key);
 }

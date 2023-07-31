@@ -1,14 +1,23 @@
+@import './vars';
+
 .task06 {
   display: flex;
+  justify-content: center;
+
+  &__main-menu {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
 
   &__header {
-    padding: 1px;
+    padding: 0 3px;
     text-align: center;
   }
 
   //TASK
   &-01 {
-    border: 1px solid black;
+    border: 1px solid border('light-scheme');
     width: 150px;
 
     &__button {
@@ -17,21 +26,28 @@
       width: 100px;
       margin: 0 auto;
     }
+
+    &__ul {
+      list-style: none;
+      display: flex;
+      padding: 0 0 0 5px;
+      flex-direction: column;
+    }
   }
 
   //TASK
   &-02 {
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid border('light-scheme');
+    border-right: 1px solid border('light-scheme');
+    border-top: 1px solid border('light-scheme');
     width: 150px;
   }
 
   //TASK
   &-03 {
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid border('light-scheme');
+    border-right: 1px solid border('light-scheme');
+    border-top: 1px solid border('light-scheme');
     width: 150px;
 
     &__gallery {
@@ -53,9 +69,9 @@
   //TASK
   &-04 {
     align-items: center;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid border('light-scheme') black;
+    border-right: 1px solid border('light-scheme');
+    border-top: 1px solid border('light-scheme');
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -64,9 +80,9 @@
   //TASK
   &-05 {
     align-items: center;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid border('light-scheme');
+    border-right: 1px solid border('light-scheme');
+    border-top: 1px solid border('light-scheme');
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -85,9 +101,9 @@
   //TASK
   &-06 {
     align-items: center;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid border('light-scheme');
+    border-right: 1px solid border('light-scheme');
+    border-top: 1px solid border('light-scheme');
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -95,7 +111,8 @@
     .validation-input {
       border: 2px solid #bdbdbd;
       text-align: center;
-      width: 145px;
+      width: 140px;
+      padding: 0;
     }
 
     .valid {
@@ -110,9 +127,9 @@
   //TASK
   &-07 {
     align-items: center;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid border('light-scheme');
+    border-right: 1px solid border('light-scheme');
+    border-top: 1px solid border('light-scheme');
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -124,21 +141,107 @@
 
   //TASK
   &-08 {
-    align-items: center;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    display: flex;
-    flex-direction: column;
+    border-bottom: 1px solid border('light-scheme');
+    border-right: 1px solid border('light-scheme');
+    border-top: 1px solid border('light-scheme');
     width: 150px;
 
     &__input {
+      display: flex;
+      margin-bottom: 10px;
       width: 135px;
     }
 
     &__button {
       display: flex;
       justify-content: center;
+    }
+
+    > form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      > label {
+        text-align: center;
+      }
+    }
+  }
+
+  //TASK
+  &-09 {
+    border-bottom: 1px solid border('light-scheme');
+    border-right: 1px solid border('light-scheme');
+    border-top: 1px solid border('light-scheme');
+    width: 150px;
+
+    &__container {
+      text-align: center;
+    }
+
+    &__button {
+      cursor: pointer;
+    }
+  }
+
+  //TASK
+  &-10 {
+    border: 1px solid border('light-scheme');
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > input {
+      margin-bottom: 15px;
+    }
+
+    > button:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .task06 {
+    &-01 {
+      border-color: border('dark-scheme');
+    }
+
+    &-02 {
+      border-color: border('dark-scheme');
+    }
+
+    &-03 {
+      border-color: border('dark-scheme');
+    }
+
+    &-04 {
+      border-color: border('dark-scheme');
+    }
+
+    &-05 {
+      border-color: border('dark-scheme');
+    }
+
+    &-06 {
+      border-color: border('dark-scheme');
+    }
+
+    &-07 {
+      border-color: border('dark-scheme');
+    }
+
+    &-08 {
+      border-color: border('dark-scheme');
+    }
+
+    &-09 {
+      border-color: border('dark-scheme');
+    }
+
+    &-10 {
+      border-color: border('dark-scheme');
     }
   }
 }

@@ -6,7 +6,6 @@ function countCategoriesAndItems() {
   const categoriesItems = categories.querySelectorAll('.item');
 
   console.log(`Number of categories: ${categoriesNumber.length}`);
-  console.log(' ');
 
   for (let i = 0; i < categoriesItems.length; i++) {
     const category = categoriesItems[i];

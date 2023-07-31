@@ -6,3 +6,5 @@ import './js/task06-05';
 import './js/task06-06';
 import './js/task06-07';
 import './js/task06-08';
+import './js/task06-09';
+import './js/task06-10';
