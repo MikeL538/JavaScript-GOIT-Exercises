@@ -1,0 +1,144 @@
+.task06 {
+  display: flex;
+
+  &__header {
+    padding: 1px;
+    text-align: center;
+  }
+
+  //TASK
+  &-01 {
+    border: 1px solid black;
+    width: 150px;
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      width: 100px;
+      margin: 0 auto;
+    }
+  }
+
+  //TASK
+  &-02 {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    width: 150px;
+  }
+
+  //TASK
+  &-03 {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    width: 150px;
+
+    &__gallery {
+      list-style: none;
+      padding: 0;
+
+      > li {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        > img {
+          height: 70px;
+          width: 140px;
+        }
+      }
+    }
+  }
+
+  //TASK
+  &-04 {
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+
+  //TASK
+  &-05 {
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 150px;
+
+    > input {
+      width: 145px;
+    }
+
+    &__output {
+      max-width: 145px;
+      word-wrap: break-word;
+    }
+  }
+
+  //TASK
+  &-06 {
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+
+    .validation-input {
+      border: 2px solid #bdbdbd;
+      text-align: center;
+      width: 145px;
+    }
+
+    .valid {
+      border-color: #4caf50;
+    }
+
+    .invalid {
+      border-color: #f44336;
+    }
+  }
+
+  //TASK
+  &-07 {
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+
+    > input {
+      width: 145px;
+    }
+  }
+
+  //TASK
+  &-08 {
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+
+    &__input {
+      width: 135px;
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

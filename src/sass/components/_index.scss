@@ -1,6 +1,9 @@
 @import './vars';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: pink;
   background-color: body('light-scheme');
 }
