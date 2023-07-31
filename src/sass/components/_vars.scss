@@ -1,0 +1,8 @@
+$body: (
+  'dark-scheme': #000,
+  'light-scheme': #fff,
+);
+
+@function body($key) {
+  @return map-get($body, $key);
+}

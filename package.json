@@ -1,0 +1,24 @@
+{
+  "name": "javascript-goit-exercises",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://MikeL538.github.io/JavaScript-GOIT-Exercises/",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /JavaScript-GOIT-Exercises/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeL538/JavaScript-GOIT-Exercises"
+  },
+  "keywords": [],
+  "author": "Michał Lipiak <m.lipiak97@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
