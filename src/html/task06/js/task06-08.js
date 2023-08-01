@@ -1,4 +1,4 @@
-const form = document.querySelector('.login-form');
+const form = document.querySelector('.task06-08__login-form');
 
 form.addEventListener('submit', event => {
   event.preventDefault();

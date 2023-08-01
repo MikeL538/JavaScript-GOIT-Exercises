@@ -6,7 +6,7 @@ function getRandomHexColor() {
 
 const btn = document.querySelector('.task06-09__button');
 const Resetbtn = document.querySelector('.task06-09__reset-button');
-const colorRgb = document.querySelector('.color');
+const colorRgb = document.querySelector('.task06-09__container--color');
 const rgbDiv = document.querySelector('.task06-09');
 
 btn.addEventListener('click', () => {

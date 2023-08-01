@@ -71,6 +71,10 @@
     display: flex;
     flex-direction: column;
     width: 150px;
+
+    > div > button {
+      margin: 0 5px;
+    }
   }
 
   //TASK
@@ -105,10 +109,10 @@
     flex-direction: column;
     width: 150px;
 
-    .validation-input {
-      border: 2px solid #bdbdbd;
+    &__validation-input {
+      border: 1px solid #bdbdbd;
       text-align: center;
-      width: 140px;
+      width: 135px;
       padding: 0;
     }
 
@@ -154,7 +158,7 @@
       justify-content: center;
     }
 
-    > form {
+    &__login-form {
       align-items: center;
       display: flex;
       flex-direction: column;

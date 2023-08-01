@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Homework 6</title>
     <link rel="stylesheet" href="../../css/main.css" />
-    <meta name="color-scheme" content="dark light" />
   </head>
   <body>
     <main>
@@ -109,7 +109,7 @@
           </h2>
           <input
             type="text"
-            class="validation-input"
+            class="task06-06__validation-input"
             placeholder="Please enter 6 symbols"
           />
         </div>
@@ -129,7 +129,7 @@
           <h2 class="task06__header">
             <em>8. Sends email and password data (shows in console here).</em>
           </h2>
-          <form class="login-form">
+          <form class="task06-08__login-form">
             <label>
               Email <input class="task06-08__input" type="email" name="email"
             /></label>
@@ -147,7 +147,10 @@
             <em>9. Button changes color of the given box for random color.</em>
           </h2>
           <div class="task06-09__container">
-            <p>Background color: <span class="color">RGB#Code</span></p>
+            <p>
+              Background color:
+              <span class="task06-09__container--color">RGB#Code</span>
+            </p>
             <button type="button" class="task06-09__button">
               Change color
             </button>
@@ -170,6 +173,6 @@
         <div class="task06__container" id="boxes"></div>
       </div>
     </main>
-    <script src="./index.js" type="module"></script>
+    <script src="./task06-index.js" type="module"></script>
   </body>
 </html>
