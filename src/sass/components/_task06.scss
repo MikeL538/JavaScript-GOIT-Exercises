@@ -58,10 +58,6 @@
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
-        > img {
-          height: 70px;
-          width: 140px;
-        }
       }
     }
   }
@@ -95,6 +91,7 @@
     &__output {
       max-width: 145px;
       word-wrap: break-word;
+      text-align: center;
     }
   }
 

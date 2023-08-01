@@ -19,7 +19,7 @@ const galleryItems = images
   .map(
     image => `
     <li>
-      <img src="${image.url}" alt="${image.alt}>
+      <img src="${image.url}" alt="${image.alt} width="140" height="70">
     </li>
   `
   )
