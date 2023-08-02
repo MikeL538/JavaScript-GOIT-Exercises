@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Timers and Promises</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body>
+    <div class="tasks__main-menu-link">
+      <a href="../../index.html">Back to main menu.</a>
+    </div>
+
+    <div class="timer_and_promises">
+      <div class="timer_and_promises__color-switcher">
+        <h2 class="timer_and_promises__header">
+          <em>1. Changes body background color every 0.8s when started.</em>
+        </h2>
+        <button type="button" data-start>Start</button>
+        <button type="button" data-stop>Stop</button>
+        <button type="button" data-reset>Reset</button>
+      </div>
+
+      <div class="timer_and_promises__timer">
+        <h2 class="timer_and_promises__header">
+          <em>2. Counts the time left to picked date.</em>
+        </h2>
+        <input type="text" id="datetime-picker" />
+        <button type="button" data-start-timer>Start</button>
+        <button type="button" data-stop-timer>Stop</button>
+
+        <div class="timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timer_and_promises__promises">
+        <h2 class="timer_and_promises__header">
+          <em>3. Creates promises.</em>
+        </h2>
+        <form class="form">
+          <label>
+            First delay (ms)
+            <input type="number" name="delay" required />
+          </label>
+          <label>
+            Delay step (ms)
+            <input type="number" name="step" required />
+          </label>
+          <label>
+            Amount
+            <input type="number" name="amount" required />
+          </label>
+          <button type="submit" data-start-promises>Create promises</button>
+          <button type="button" data-promises-stop>Stop promises</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/color-switcher.js" type="module"></script>
+    <script src="./js/timer.js" type="module"></script>
+    <script src="js/promises.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+@import '../vars';
+
+.timer_and_promises {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+
+  &__header {
+    text-align: center;
+  }
+
+  // TASK
+  &__color-switcher {
+    align-items: center;
+    border: 1px solid border('light-scheme');
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 25px;
+    width: 200px;
+
+    > button {
+      height: 25px;
+      margin: 5px;
+      width: 75px;
+    }
+  }
+
+  &__timer {
+    border: 1px solid border('light-scheme');
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 25px;
+    text-align: center;
+    width: 200px;
+
+    > input {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    > button {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__promises {
+    align-items: center;
+    border: 1px solid border('light-scheme');
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 25px;
+    text-align: center;
+    width: 200px;
+
+    > form {
+      > label {
+        > input {
+          margin: 2px 0 10px 0;
+        }
+      }
+
+      > button {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .timer_and_promises {
+    &__color-switcher {
+      border-color: border('dark-scheme');
+    }
+
+    &__timer {
+      border-color: border('dark-scheme');
+    }
+
+    &__promises {
+      border-color: border('dark-scheme');
+    }
+  }
+}

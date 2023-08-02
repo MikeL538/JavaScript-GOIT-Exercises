@@ -13,7 +13,7 @@ const images = [
   },
 ];
 
-const galleryList = document.querySelector('.task06-03__gallery');
+const galleryList = document.querySelector('.small_tasks-03__gallery');
 
 const galleryItems = images
   .map(

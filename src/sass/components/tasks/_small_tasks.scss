@@ -1,14 +1,8 @@
-@import './vars';
+@import '../vars';
 
-.task06 {
+.small_tasks {
   display: flex;
   justify-content: center;
-
-  &__main-menu {
-    display: flex;
-    justify-content: center;
-    margin: 15px 0;
-  }
 
   &__header {
     padding: 0 3px;
@@ -88,8 +82,9 @@
     overflow: hidden;
     width: 150px;
 
-    > input {
-      width: 145px;
+    &__input {
+      text-align: center;
+      width: 125px;
     }
 
     &__output {
@@ -112,7 +107,7 @@
     &__validation-input {
       border: 1px solid #bdbdbd;
       text-align: center;
-      width: 135px;
+      width: 130px;
       padding: 0;
     }
 
@@ -150,7 +145,7 @@
     &__input {
       display: flex;
       margin-bottom: 10px;
-      width: 135px;
+      width: 130px;
     }
 
     &__button {
@@ -204,7 +199,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .task06 {
+  .small_tasks {
     &-01 {
       border-color: border('dark-scheme');
     }

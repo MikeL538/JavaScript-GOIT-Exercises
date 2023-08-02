@@ -1,4 +1,4 @@
-const countButton = document.querySelector('.task06-01__button');
+const countButton = document.querySelector('.small_tasks-01__button');
 
 function countCategoriesAndItems() {
   const categories = document.querySelector('#categories');

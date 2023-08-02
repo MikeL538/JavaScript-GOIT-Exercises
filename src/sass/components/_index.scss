@@ -3,3 +3,9 @@
 * {
   box-sizing: border-box;
 }
+
+.main-menu__list {
+  > li {
+    margin-bottom: 15px;
+  }
+}

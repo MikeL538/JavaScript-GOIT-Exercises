@@ -1,0 +1,10 @@
+import './js/small_tasks-01';
+import './js/small_tasks-02';
+import './js/small_tasks-03';
+import './js/small_tasks-04';
+import './js/small_tasks-05';
+import './js/small_tasks-06';
+import './js/small_tasks-07';
+import './js/small_tasks-08';
+import './js/small_tasks-09';
+import './js/small_tasks-10';

@@ -1,0 +1,31 @@
+.video_and_form {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 90px;
+
+  &__feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    > label {
+      text-align: center;
+
+      > input {
+        margin: 5px 0 10px 0;
+        width: 300px;
+      }
+
+      > textarea {
+        margin: 5px 0 10px 0;
+        width: 300px;
+      }
+    }
+
+    > button {
+      display: flex;
+      margin: 10px auto;
+    }
+  }
+}

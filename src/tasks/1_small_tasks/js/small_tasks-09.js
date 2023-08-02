@@ -4,10 +4,10 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const btn = document.querySelector('.task06-09__button');
-const Resetbtn = document.querySelector('.task06-09__reset-button');
-const colorRgb = document.querySelector('.task06-09__container--color');
-const rgbDiv = document.querySelector('.task06-09');
+const btn = document.querySelector('.small_tasks-09__button');
+const Resetbtn = document.querySelector('.small_tasks-09__reset-button');
+const colorRgb = document.querySelector('.small_tasks-09__container--color');
+const rgbDiv = document.querySelector('.small_tasks-09');
 
 btn.addEventListener('click', () => {
   rgbDiv.style.backgroundColor = getRandomHexColor();

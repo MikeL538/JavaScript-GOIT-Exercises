@@ -1,0 +1,10 @@
+.cat-browser {
+  &__div {
+    max-width: 800px;
+    max-height: 800px;
+    > img {
+      max-width: 400px;
+      max-height: 400px;
+    }
+  }
+}

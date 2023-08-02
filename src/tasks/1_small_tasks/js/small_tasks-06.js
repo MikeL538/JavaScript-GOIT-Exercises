@@ -1,4 +1,4 @@
-const textInput = document.querySelector('.task06-06__validation-input');
+const textInput = document.querySelector('.small_tasks-06__validation-input');
 
 textInput.addEventListener('blur', () => {
   textInput.classList.remove('valid', 'invalid');
