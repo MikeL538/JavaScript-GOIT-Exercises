@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Images Browser</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="images_browser__body">
+    <header class="images_browser__header">
+      <div class="tasks__main-menu-link">
+        <a href="../../index.html">Back to main menu.</a>
+      </div>
+
+      <form class="images_browser__search-form" id="search-form">
+        <input
+          class="images_browser__search-form__input"
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+
+        <button class="images_browser__search-form__button" type="submit">
+          Search
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <div class="images_browser__gallery">
+        <ul class="images_browser__gallery__list">
+          <!-- Obraz karty -->
+        </ul>
+      </div>
+      <div class="images_browser__load-more">
+        <button type="button" class="images_browser__load-more__button">
+          Load more
+        </button>
+      </div>
+    </main>
+
+    <script src="./image_browser.js" type="module"></script>
+  </body>
+</html>

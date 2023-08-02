@@ -1,0 +1,129 @@
+@import '../vars';
+
+.images_browser {
+  &__body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  &__header {
+    background-color: header-image_browser('light-scheme');
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__search-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    max-width: 400px;
+    padding: 15px;
+    width: 100%;
+
+    &__input {
+      border-radius: 5px;
+      font-size: 18px;
+      height: 30px;
+      margin-bottom: 4px;
+      padding: 5px;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__button {
+      background-color: buttons-image_browser('light-scheme');
+      border-radius: 8px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      height: 25px;
+      margin-top: 10px;
+      width: 70px;
+    }
+  }
+
+  &__load-more {
+    display: flex;
+    justify-content: center;
+
+    &__button {
+      background-color: buttons-image_browser('light-scheme');
+      border-radius: 8px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 500;
+      height: 35px;
+      width: 110px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__gallery {
+    margin: 20px 0 20px 0;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      list-style: none;
+      margin: 0 auto;
+      scroll-margin-top: 380px;
+
+      > li {
+        > a {
+          > img {
+            border-radius: 5%;
+            border: 3px solid border('light-scheme');
+            cursor: zoom-in;
+            height: 200px;
+            width: 350px;
+          }
+        }
+
+        .info {
+          display: flex;
+          justify-content: space-evenly;
+          gap: 5px;
+
+          &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: 'dark') {
+  .images_browser {
+    &__header {
+      background-color: header-image_browser('dark-scheme');
+    }
+
+    &__search-form__button {
+      background-color: buttons-image_browser('dark-scheme');
+    }
+
+    &__gallery__list {
+      > li a img {
+        border-color: border('dark-scheme');
+      }
+    }
+
+    &__load-more__button {
+      background-color: buttons-image_browser('dark-scheme');
+    }
+  }
+}

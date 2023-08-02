@@ -3,7 +3,7 @@ import SlimSelect from 'slim-select';
 import axios from 'axios';
 
 const catInfoDiv = document.querySelector('.cat_browser__div');
-const breedSelect = document.querySelector('#breed-select');
+const breedSelect = document.querySelector('.cat_browser__select');
 const xApiKey =
   'live_Xqmc7C92q9l9fMBe384z4RNI063q7JOQ0hZCXP5zi9i0nysYuEsuaYGO9UEfujTt';
 

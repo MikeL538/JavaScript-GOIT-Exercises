@@ -1,8 +1,26 @@
 $border: (
-  'dark-scheme': #fff,
   'light-scheme': #000,
+  'dark-scheme': #fff,
+);
+
+$header-image_browser: (
+  'light-scheme': #4b67f7,
+  'dark-scheme': #18175c,
+);
+
+$buttons-image_browser: (
+  'light-scheme': rgb(39, 155, 39),
+  'dark-scheme': rgb(16, 89, 16),
 );
 
 @function border($key) {
   @return map-get($border, $key);
+}
+
+@function header-image_browser($key) {
+  @return map-get($header-image_browser, $key);
+}
+
+@function buttons-image_browser($key) {
+  @return map-get($buttons-image_browser, $key);
 }

@@ -1,10 +1,48 @@
-.cat-browser {
+@import '../vars';
+
+.cat_browser {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+
+  &__select {
+    max-width: 300px;
+
+    > div input {
+      color: #000;
+    }
+  }
+
   &__div {
-    max-width: 800px;
+    align-items: center;
+    display: flex;
+
+    margin-top: 50px;
     max-height: 800px;
+    max-width: 800px;
+
     > img {
-      max-width: 400px;
+      border-radius: 50%;
+      border: 1px solid border('light-scheme');
+      margin-right: 50px;
       max-height: 400px;
+      max-width: 400px;
+    }
+
+    > div h2 {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .cat_browser {
+    &__div {
+      > img {
+        border-color: border('dark-scheme');
+      }
     }
   }
 }
