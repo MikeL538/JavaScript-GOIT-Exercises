@@ -26,6 +26,7 @@
     "@vimeo/player": "^2.20.1",
     "axios": "^1.4.0",
     "flatpickr": "^4.6.13",
+    "infinite-scroll": "^4.0.1",
     "lodash.throttle": "^4.1.1",
     "notiflix": "^3.2.6",
     "simplelightbox": "^2.14.1",
