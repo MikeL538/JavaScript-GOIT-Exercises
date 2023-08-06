@@ -9,12 +9,17 @@ const searchInput = document.querySelector(
   '.images_browser__search-form__input'
 );
 const galleryList = document.querySelector('.images_browser__gallery__list');
+const loadMoreButton = document.querySelector(
+  '.images_browser__load-more__button'
+);
 
 const pixabayKey = '38531038-07b18ea2bd70e8e8bef0f3931';
 
 let page = 1;
 let totalPages = 0;
 let isLoading = false;
+
+loadMoreButton.style.display = 'none';
 
 searchButton.addEventListener('click', async event => {
   event.preventDefault();
@@ -29,6 +34,8 @@ searchButton.addEventListener('click', async event => {
   }
 
   isLoading = false; // Set isLoading to false after images are loaded
+
+  loadMoreButton.style.display = 'block';
 });
 
 async function getImages() {
@@ -52,7 +59,7 @@ async function getImages() {
 
 async function fetchImages(page) {
   const response = await fetch(
-    `https://pixabay.com/api/?key=${pixabayKey}&q=${searchInput.value}&image_type=photo&page=${page}&orientation=horizontal&safesearch=true`
+    `https://pixabay.com/api/?key=${pixabayKey}&q=${searchInput.value}&image_type=photo&page=${page}&orientation=horizontal`
   );
 
   if (!response.ok) {
@@ -110,6 +117,9 @@ async function loadMoreImages() {
       Notiflix.Notify.failure('Error occurred while fetching more images.');
     }
     isLoading = false; // Set isLoading to false after loading more images
+    if (page >= totalPages) {
+      loadMoreButton.style.display = 'none';
+    }
   }
 }
 
@@ -118,4 +128,8 @@ window.addEventListener('scroll', () => {
   if (isAtBottom()) {
     loadMoreImages();
   }
+});
+
+loadMoreButton.addEventListener('click', () => {
+  loadMoreImages();
 });
