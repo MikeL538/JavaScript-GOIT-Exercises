@@ -59,7 +59,7 @@ async function getImages() {
 
 async function fetchImages(page) {
   const response = await fetch(
-    `https://pixabay.com/api/?key=${pixabayKey}&q=${searchInput.value}&image_type=photo&page=${page}&orientation=horizontal`
+    `https://pixabay.com/api/?key=${pixabayKey}&q=${searchInput.value}&image_type=photo&page=${page}&orientation=horizontal&safesearch=true`
   );
 
   if (!response.ok) {
@@ -108,7 +108,7 @@ function isAtBottom() {
 async function loadMoreImages() {
   if (!isLoading && page < totalPages) {
     page++;
-    isLoading = true; // Set isLoading to true when loading more images
+    isLoading = true;
     try {
       const data = await fetchImages(page);
       renderImages(data);
@@ -116,10 +116,11 @@ async function loadMoreImages() {
       console.error('Error while fetching more images:', error);
       Notiflix.Notify.failure('Error occurred while fetching more images.');
     }
-    isLoading = false; // Set isLoading to false after loading more images
-    if (page >= totalPages) {
-      loadMoreButton.style.display = 'none';
-    }
+    isLoading = false;
+  }
+
+  if (page >= totalPages) {
+    loadMoreButton.style.display = 'none';
   }
 }
 
